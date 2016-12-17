@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "46D7F00D1DA61A0B008309A4"
-               BuildableName = "Whrisit.app"
+               BuildableName = "LocoThings.app"
                BlueprintName = "LocoThings"
                ReferencedContainer = "container:LocoThings.xcodeproj">
             </BuildableReference>
@@ -53,7 +53,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "46D7F00D1DA61A0B008309A4"
-            BuildableName = "Whrisit.app"
+            BuildableName = "LocoThings.app"
             BlueprintName = "LocoThings"
             ReferencedContainer = "container:LocoThings.xcodeproj">
          </BuildableReference>
@@ -76,7 +76,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "46D7F00D1DA61A0B008309A4"
-            BuildableName = "Whrisit.app"
+            BuildableName = "LocoThings.app"
             BlueprintName = "LocoThings"
             ReferencedContainer = "container:LocoThings.xcodeproj">
          </BuildableReference>
@@ -99,7 +99,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "46D7F00D1DA61A0B008309A4"
-            BuildableName = "Whrisit.app"
+            BuildableName = "LocoThings.app"
             BlueprintName = "LocoThings"
             ReferencedContainer = "container:LocoThings.xcodeproj">
          </BuildableReference>
