@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to LocoThings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jhS-5K-KMj">
+                                <rect key="frame" x="20" y="430" width="280" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="NpW-H1-eh3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="21"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch" translatesAutoresizingMaskIntoConstraints="NO" id="Xrl-dk-Gca">
+                                <rect key="frame" x="40" y="120" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="LDm-nF-H7L"/>
+                                    <constraint firstAttribute="height" constant="240" id="n5u-Uy-lZv"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Xrl-dk-Gca" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="40" id="0ow-Tf-pRN"/>
+                            <constraint firstItem="jhS-5K-KMj" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="20" id="6ro-lC-Q49"/>
+                            <constraint firstAttribute="trailing" secondItem="Xrl-dk-Gca" secondAttribute="trailing" constant="40" id="AMX-Z1-ZG6"/>
+                            <constraint firstItem="Xrl-dk-Gca" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="100" id="Ao9-dn-1HO"/>
+                            <constraint firstItem="jhS-5K-KMj" firstAttribute="top" secondItem="Xrl-dk-Gca" secondAttribute="bottom" constant="70" id="Ch2-FY-DHM"/>
+                            <constraint firstAttribute="trailing" secondItem="jhS-5K-KMj" secondAttribute="trailing" constant="20" id="Ds0-fi-aFq"/>
+                            <constraint firstItem="jhS-5K-KMj" firstAttribute="top" secondItem="Xrl-dk-Gca" secondAttribute="bottom" constant="70" id="RM8-B9-rA1"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="jhS-5K-KMj" secondAttribute="bottom" constant="20" id="jXM-g1-SDm"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="launch" width="512" height="512"/>
+    </resources>
+</document>

@@ -1,0 +1,834 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1EBF7602ABFFBE5E222DE101 /* Pods_LocoThings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CCC5297CDAB93EB01AA6759 /* Pods_LocoThings.framework */; };
+		2D7B8DC4652188058729BC39 /* Pods_LocoThingsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9FF5BB132E08E63B1DD0B6 /* Pods_LocoThingsUITests.framework */; };
+		4607C8CB1DA78F4700FC3A0D /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4607C8C91DA78F4700FC3A0D /* SessionManager.swift */; };
+		4607C8CC1DA78F4700FC3A0D /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4607C8CA1DA78F4700FC3A0D /* Session.swift */; };
+		461ED1FF1DEAE2D700DD9979 /* FilterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461ED1FE1DEAE2D700DD9979 /* FilterVC.swift */; };
+		461ED2031DEAE98D00DD9979 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461ED2021DEAE98D00DD9979 /* CategoryCell.swift */; };
+		4634C8971DEE93C500368300 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4634C8961DEE93C500368300 /* Extensions.swift */; };
+		4650AA0C1DDBAF65009FE390 /* GAMBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4650AA0B1DDBAF65009FE390 /* GAMBanner.swift */; };
+		4650AA0E1DDBB407009FE390 /* EventsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4650AA0D1DDBB407009FE390 /* EventsVC.swift */; };
+		465C14C61DA723F100FB1123 /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 465C14C51DA723F100FB1123 /* Auth0.plist */; };
+		46788CE71DA7047E001F3982 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46788CE61DA7047E001F3982 /* LoginVC.swift */; };
+		469CD7AF1DD7D4CE00658ECD /* SideMenuTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469CD7AE1DD7D4CE00658ECD /* SideMenuTVC.swift */; };
+		469F6ADB1DF3EDA500EB111E /* EventsDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469F6ADA1DF3EDA500EB111E /* EventsDetailVC.swift */; };
+		469F6ADD1DF3F33900EB111E /* EventDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469F6ADC1DF3F33900EB111E /* EventDetailCell.swift */; };
+		469F6ADF1DF420B800EB111E /* WebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469F6ADE1DF420B800EB111E /* WebVC.swift */; };
+		46ADB3FD1DEAD471004A72B7 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ADB3FC1DEAD471004A72B7 /* BaseVC.swift */; };
+		46B4BC501DDBF1B20046B398 /* RequestXMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B4BC4F1DDBF1B20046B398 /* RequestXMLParser.swift */; };
+		46CDD9E21DA64E600043A776 /* MapLanding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CDD9E11DA64E600043A776 /* MapLanding.swift */; };
+		46D7F0121DA61A0B008309A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D7F0111DA61A0B008309A4 /* AppDelegate.swift */; };
+		46D7F0171DA61A0B008309A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46D7F0151DA61A0B008309A4 /* Main.storyboard */; };
+		46D7F01A1DA61A0B008309A4 /* LocoThings.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 46D7F0181DA61A0B008309A4 /* LocoThings.xcdatamodeld */; };
+		46D7F01C1DA61A0B008309A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46D7F01B1DA61A0B008309A4 /* Assets.xcassets */; };
+		46D7F01F1DA61A0B008309A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46D7F01D1DA61A0B008309A4 /* LaunchScreen.storyboard */; };
+		46D7F02A1DA61A0B008309A4 /* LocoThingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D7F0291DA61A0B008309A4 /* LocoThingsTests.swift */; };
+		46D7F0351DA61A0B008309A4 /* LocoThingsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D7F0341DA61A0B008309A4 /* LocoThingsUITests.swift */; };
+		46DF3DAC1DDB06E700CF06CC /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46DF3DAB1DDB06E700CF06CC /* GoogleMobileAds.framework */; };
+		46DF3DAE1DDB06F900CF06CC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46DF3DAD1DDB06F900CF06CC /* GoogleService-Info.plist */; };
+		46E03CAF1DDBE8F2004B0065 /* EventfulAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E03CAE1DDBE8F2004B0065 /* EventfulAPIClient.swift */; };
+		46E03CB11DDBEBEC004B0065 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E03CB01DDBEBEC004B0065 /* Event.swift */; };
+		DEF84D04FF5316E3E107AECD /* Pods_LocoThingsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 747B90550BF063576F6AECA9 /* Pods_LocoThingsTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		46D7F0261DA61A0B008309A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46D7F0061DA61A0B008309A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46D7F00D1DA61A0B008309A4;
+			remoteInfo = LocoThings;
+		};
+		46D7F0311DA61A0B008309A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46D7F0061DA61A0B008309A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46D7F00D1DA61A0B008309A4;
+			remoteInfo = LocoThings;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A9FF5BB132E08E63B1DD0B6 /* Pods_LocoThingsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LocoThingsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22EDE02844BE6ECA0E546360 /* Pods-LocoThingsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocoThingsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LocoThingsUITests/Pods-LocoThingsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4607C8C91DA78F4700FC3A0D /* SessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		4607C8CA1DA78F4700FC3A0D /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		461ED1FE1DEAE2D700DD9979 /* FilterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterVC.swift; sourceTree = "<group>"; };
+		461ED2021DEAE98D00DD9979 /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		4634C8961DEE93C500368300 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		4650AA0B1DDBAF65009FE390 /* GAMBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GAMBanner.swift; sourceTree = "<group>"; };
+		4650AA0D1DDBB407009FE390 /* EventsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsVC.swift; sourceTree = "<group>"; };
+		465C14C51DA723F100FB1123 /* Auth0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Auth0.plist; sourceTree = "<group>"; };
+		46788CE61DA7047E001F3982 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		469CD7AE1DD7D4CE00658ECD /* SideMenuTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuTVC.swift; sourceTree = "<group>"; };
+		469F6ADA1DF3EDA500EB111E /* EventsDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsDetailVC.swift; sourceTree = "<group>"; };
+		469F6ADC1DF3F33900EB111E /* EventDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailCell.swift; sourceTree = "<group>"; };
+		469F6ADE1DF420B800EB111E /* WebVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebVC.swift; sourceTree = "<group>"; };
+		46ADB3FC1DEAD471004A72B7 /* BaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		46B4BC4F1DDBF1B20046B398 /* RequestXMLParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestXMLParser.swift; sourceTree = "<group>"; };
+		46CDD9D11DA64C3B0043A776 /* LocoThings-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LocoThings-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		46CDD9E11DA64E600043A776 /* MapLanding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapLanding.swift; sourceTree = "<group>"; };
+		46D7F00E1DA61A0B008309A4 /* LocoThings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocoThings.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		46D7F0111DA61A0B008309A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		46D7F0161DA61A0B008309A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		46D7F0191DA61A0B008309A4 /* LocoThings.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LocoThings.xcdatamodel; sourceTree = "<group>"; };
+		46D7F01B1DA61A0B008309A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		46D7F01E1DA61A0B008309A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		46D7F0201DA61A0B008309A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46D7F0251DA61A0B008309A4 /* LocoThings.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocoThings.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		46D7F0291DA61A0B008309A4 /* LocoThingsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocoThingsTests.swift; sourceTree = "<group>"; };
+		46D7F02B1DA61A0B008309A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46D7F0301DA61A0B008309A4 /* LocoThings.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocoThings.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		46D7F0341DA61A0B008309A4 /* LocoThingsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocoThingsUITests.swift; sourceTree = "<group>"; };
+		46D7F0361DA61A0B008309A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46DF3DAB1DDB06E700CF06CC /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		46DF3DAD1DDB06F900CF06CC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		46E03CAE1DDBE8F2004B0065 /* EventfulAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventfulAPIClient.swift; sourceTree = "<group>"; };
+		46E03CB01DDBEBEC004B0065 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		747B90550BF063576F6AECA9 /* Pods_LocoThingsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LocoThingsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CCC5297CDAB93EB01AA6759 /* Pods_LocoThings.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LocoThings.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		89541602C6C986528F30859D /* Pods-LocoThingsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocoThingsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LocoThingsTests/Pods-LocoThingsTests.release.xcconfig"; sourceTree = "<group>"; };
+		99CC2DD34F8C5B1AB7112D08 /* Pods-LocoThingsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocoThingsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LocoThingsTests/Pods-LocoThingsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9E4A9A323DC25E58B6469CB2 /* Pods-LocoThings.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocoThings.release.xcconfig"; path = "Pods/Target Support Files/Pods-LocoThings/Pods-LocoThings.release.xcconfig"; sourceTree = "<group>"; };
+		AFB7AE6EF2D75E0938AFACFD /* Pods-LocoThingsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocoThingsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LocoThingsUITests/Pods-LocoThingsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C6C7C22C17A1901F526433DD /* Pods-LocoThings.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocoThings.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LocoThings/Pods-LocoThings.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		46D7F00B1DA61A0B008309A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46DF3DAC1DDB06E700CF06CC /* GoogleMobileAds.framework in Frameworks */,
+				1EBF7602ABFFBE5E222DE101 /* Pods_LocoThings.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46D7F0221DA61A0B008309A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEF84D04FF5316E3E107AECD /* Pods_LocoThingsTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46D7F02D1DA61A0B008309A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D7B8DC4652188058729BC39 /* Pods_LocoThingsUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07797BD01A75D95A3EA36B6F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C6C7C22C17A1901F526433DD /* Pods-LocoThings.debug.xcconfig */,
+				9E4A9A323DC25E58B6469CB2 /* Pods-LocoThings.release.xcconfig */,
+				99CC2DD34F8C5B1AB7112D08 /* Pods-LocoThingsTests.debug.xcconfig */,
+				89541602C6C986528F30859D /* Pods-LocoThingsTests.release.xcconfig */,
+				22EDE02844BE6ECA0E546360 /* Pods-LocoThingsUITests.debug.xcconfig */,
+				AFB7AE6EF2D75E0938AFACFD /* Pods-LocoThingsUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4607C8CD1DA78F8100FC3A0D /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				46DF3DAD1DDB06F900CF06CC /* GoogleService-Info.plist */,
+				46DF3DAB1DDB06E700CF06CC /* GoogleMobileAds.framework */,
+				46D7F01D1DA61A0B008309A4 /* LaunchScreen.storyboard */,
+				46CDD9D11DA64C3B0043A776 /* LocoThings-Bridging-Header.h */,
+				46D7F0111DA61A0B008309A4 /* AppDelegate.swift */,
+				46D7F0201DA61A0B008309A4 /* Info.plist */,
+				465C14C51DA723F100FB1123 /* Auth0.plist */,
+				46D7F0181DA61A0B008309A4 /* LocoThings.xcdatamodeld */,
+				46B4BC4F1DDBF1B20046B398 /* RequestXMLParser.swift */,
+				4607C8C91DA78F4700FC3A0D /* SessionManager.swift */,
+				4607C8CA1DA78F4700FC3A0D /* Session.swift */,
+			);
+			name = Supporting;
+			sourceTree = "<group>";
+		};
+		46ADB3F51DEAD155004A72B7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				46E03CB01DDBEBEC004B0065 /* Event.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		46ADB3F61DEAD173004A72B7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				469F6ADC1DF3F33900EB111E /* EventDetailCell.swift */,
+				46E03CAE1DDBE8F2004B0065 /* EventfulAPIClient.swift */,
+				461ED2021DEAE98D00DD9979 /* CategoryCell.swift */,
+				4634C8961DEE93C500368300 /* Extensions.swift */,
+				4650AA0B1DDBAF65009FE390 /* GAMBanner.swift */,
+				46ADB3FC1DEAD471004A72B7 /* BaseVC.swift */,
+				469CD7AE1DD7D4CE00658ECD /* SideMenuTVC.swift */,
+				469F6ADE1DF420B800EB111E /* WebVC.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		46D7F0051DA61A0B008309A4 = {
+			isa = PBXGroup;
+			children = (
+				46D7F0101DA61A0B008309A4 /* LocoThings */,
+				46D7F0281DA61A0B008309A4 /* LocoThingsTests */,
+				46D7F0331DA61A0B008309A4 /* LocoThingsUITests */,
+				46D7F00F1DA61A0B008309A4 /* Products */,
+				07797BD01A75D95A3EA36B6F /* Pods */,
+				E1FAD4DD3ED1678AE8C70C89 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		46D7F00F1DA61A0B008309A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46D7F00E1DA61A0B008309A4 /* LocoThings.app */,
+				46D7F0251DA61A0B008309A4 /* LocoThings.xctest */,
+				46D7F0301DA61A0B008309A4 /* LocoThings.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46D7F0101DA61A0B008309A4 /* LocoThings */ = {
+			isa = PBXGroup;
+			children = (
+				46ADB3F51DEAD155004A72B7 /* Models */,
+				46ADB3F61DEAD173004A72B7 /* Helpers */,
+				46E2D9C71DA7A229008B0134 /* Controllers */,
+				4607C8CD1DA78F8100FC3A0D /* Supporting */,
+				46D7F0151DA61A0B008309A4 /* Main.storyboard */,
+				46D7F01B1DA61A0B008309A4 /* Assets.xcassets */,
+			);
+			path = LocoThings;
+			sourceTree = "<group>";
+		};
+		46D7F0281DA61A0B008309A4 /* LocoThingsTests */ = {
+			isa = PBXGroup;
+			children = (
+				46D7F0291DA61A0B008309A4 /* LocoThingsTests.swift */,
+				46D7F02B1DA61A0B008309A4 /* Info.plist */,
+			);
+			path = LocoThingsTests;
+			sourceTree = "<group>";
+		};
+		46D7F0331DA61A0B008309A4 /* LocoThingsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				46D7F0341DA61A0B008309A4 /* LocoThingsUITests.swift */,
+				46D7F0361DA61A0B008309A4 /* Info.plist */,
+			);
+			path = LocoThingsUITests;
+			sourceTree = "<group>";
+		};
+		46E2D9C71DA7A229008B0134 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				461ED1FE1DEAE2D700DD9979 /* FilterVC.swift */,
+				46788CE61DA7047E001F3982 /* LoginVC.swift */,
+				469F6ADA1DF3EDA500EB111E /* EventsDetailVC.swift */,
+				4650AA0D1DDBB407009FE390 /* EventsVC.swift */,
+				46CDD9E11DA64E600043A776 /* MapLanding.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		E1FAD4DD3ED1678AE8C70C89 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7CCC5297CDAB93EB01AA6759 /* Pods_LocoThings.framework */,
+				747B90550BF063576F6AECA9 /* Pods_LocoThingsTests.framework */,
+				0A9FF5BB132E08E63B1DD0B6 /* Pods_LocoThingsUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		46D7F00D1DA61A0B008309A4 /* LocoThings */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46D7F0391DA61A0B008309A4 /* Build configuration list for PBXNativeTarget "LocoThings" */;
+			buildPhases = (
+				3B9A7C8E6AB2F95F606932F5 /* [CP] Check Pods Manifest.lock */,
+				46D7F00A1DA61A0B008309A4 /* Sources */,
+				46D7F00B1DA61A0B008309A4 /* Frameworks */,
+				46D7F00C1DA61A0B008309A4 /* Resources */,
+				E1FF43CC0F930C19AFB0415F /* [CP] Embed Pods Frameworks */,
+				60225555D65A3644DDDBE514 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LocoThings;
+			productName = LocoThings;
+			productReference = 46D7F00E1DA61A0B008309A4 /* LocoThings.app */;
+			productType = "com.apple.product-type.application";
+		};
+		46D7F0241DA61A0B008309A4 /* LocoThingsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46D7F03C1DA61A0B008309A4 /* Build configuration list for PBXNativeTarget "LocoThingsTests" */;
+			buildPhases = (
+				E1946B2C33FABFAA35BE683D /* [CP] Check Pods Manifest.lock */,
+				46D7F0211DA61A0B008309A4 /* Sources */,
+				46D7F0221DA61A0B008309A4 /* Frameworks */,
+				46D7F0231DA61A0B008309A4 /* Resources */,
+				A91EC45B6C33A050562B72F4 /* [CP] Embed Pods Frameworks */,
+				D297470DD70A7C8EB4217B1F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46D7F0271DA61A0B008309A4 /* PBXTargetDependency */,
+			);
+			name = LocoThingsTests;
+			productName = LocoThingsTests;
+			productReference = 46D7F0251DA61A0B008309A4 /* LocoThings.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		46D7F02F1DA61A0B008309A4 /* LocoThingsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46D7F03F1DA61A0B008309A4 /* Build configuration list for PBXNativeTarget "LocoThingsUITests" */;
+			buildPhases = (
+				DAE14F99D46FC0FD06CBAA89 /* [CP] Check Pods Manifest.lock */,
+				46D7F02C1DA61A0B008309A4 /* Sources */,
+				46D7F02D1DA61A0B008309A4 /* Frameworks */,
+				46D7F02E1DA61A0B008309A4 /* Resources */,
+				CFEDBE77EE59C097EBD76A1E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46D7F0321DA61A0B008309A4 /* PBXTargetDependency */,
+			);
+			name = LocoThingsUITests;
+			productName = LocoThingsUITests;
+			productReference = 46D7F0301DA61A0B008309A4 /* LocoThings.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46D7F0061DA61A0B008309A4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Tung Ly";
+				TargetAttributes = {
+					46D7F00D1DA61A0B008309A4 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 66728D7G65;
+					};
+					46D7F0241DA61A0B008309A4 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 46D7F00D1DA61A0B008309A4;
+					};
+					46D7F02F1DA61A0B008309A4 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 46D7F00D1DA61A0B008309A4;
+					};
+				};
+			};
+			buildConfigurationList = 46D7F0091DA61A0B008309A4 /* Build configuration list for PBXProject "LocoThings" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 46D7F0051DA61A0B008309A4;
+			productRefGroup = 46D7F00F1DA61A0B008309A4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				46D7F00D1DA61A0B008309A4 /* LocoThings */,
+				46D7F0241DA61A0B008309A4 /* LocoThingsTests */,
+				46D7F02F1DA61A0B008309A4 /* LocoThingsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		46D7F00C1DA61A0B008309A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46D7F01F1DA61A0B008309A4 /* LaunchScreen.storyboard in Resources */,
+				46D7F01C1DA61A0B008309A4 /* Assets.xcassets in Resources */,
+				46DF3DAE1DDB06F900CF06CC /* GoogleService-Info.plist in Resources */,
+				46D7F0171DA61A0B008309A4 /* Main.storyboard in Resources */,
+				465C14C61DA723F100FB1123 /* Auth0.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46D7F0231DA61A0B008309A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46D7F02E1DA61A0B008309A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B9A7C8E6AB2F95F606932F5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		60225555D65A3644DDDBE514 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LocoThings/Pods-LocoThings-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A91EC45B6C33A050562B72F4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LocoThingsTests/Pods-LocoThingsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CFEDBE77EE59C097EBD76A1E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LocoThingsUITests/Pods-LocoThingsUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D297470DD70A7C8EB4217B1F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LocoThingsTests/Pods-LocoThingsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAE14F99D46FC0FD06CBAA89 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E1946B2C33FABFAA35BE683D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E1FF43CC0F930C19AFB0415F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LocoThings/Pods-LocoThings-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46D7F00A1DA61A0B008309A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46D7F01A1DA61A0B008309A4 /* LocoThings.xcdatamodeld in Sources */,
+				4650AA0E1DDBB407009FE390 /* EventsVC.swift in Sources */,
+				46CDD9E21DA64E600043A776 /* MapLanding.swift in Sources */,
+				469CD7AF1DD7D4CE00658ECD /* SideMenuTVC.swift in Sources */,
+				46E03CB11DDBEBEC004B0065 /* Event.swift in Sources */,
+				4607C8CC1DA78F4700FC3A0D /* Session.swift in Sources */,
+				469F6ADB1DF3EDA500EB111E /* EventsDetailVC.swift in Sources */,
+				46B4BC501DDBF1B20046B398 /* RequestXMLParser.swift in Sources */,
+				46788CE71DA7047E001F3982 /* LoginVC.swift in Sources */,
+				4607C8CB1DA78F4700FC3A0D /* SessionManager.swift in Sources */,
+				46D7F0121DA61A0B008309A4 /* AppDelegate.swift in Sources */,
+				461ED1FF1DEAE2D700DD9979 /* FilterVC.swift in Sources */,
+				4650AA0C1DDBAF65009FE390 /* GAMBanner.swift in Sources */,
+				46ADB3FD1DEAD471004A72B7 /* BaseVC.swift in Sources */,
+				469F6ADF1DF420B800EB111E /* WebVC.swift in Sources */,
+				4634C8971DEE93C500368300 /* Extensions.swift in Sources */,
+				461ED2031DEAE98D00DD9979 /* CategoryCell.swift in Sources */,
+				469F6ADD1DF3F33900EB111E /* EventDetailCell.swift in Sources */,
+				46E03CAF1DDBE8F2004B0065 /* EventfulAPIClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46D7F0211DA61A0B008309A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46D7F02A1DA61A0B008309A4 /* LocoThingsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46D7F02C1DA61A0B008309A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46D7F0351DA61A0B008309A4 /* LocoThingsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		46D7F0271DA61A0B008309A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46D7F00D1DA61A0B008309A4 /* LocoThings */;
+			targetProxy = 46D7F0261DA61A0B008309A4 /* PBXContainerItemProxy */;
+		};
+		46D7F0321DA61A0B008309A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46D7F00D1DA61A0B008309A4 /* LocoThings */;
+			targetProxy = 46D7F0311DA61A0B008309A4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		46D7F0151DA61A0B008309A4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46D7F0161DA61A0B008309A4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		46D7F01D1DA61A0B008309A4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46D7F01E1DA61A0B008309A4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		46D7F0371DA61A0B008309A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		46D7F0381DA61A0B008309A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		46D7F03A1DA61A0B008309A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6C7C22C17A1901F526433DD /* Pods-LocoThings.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LocoThings",
+				);
+				INFOPLIST_FILE = LocoThings/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TungLy.LocoThings;
+				PRODUCT_NAME = LocoThings;
+				SWIFT_OBJC_BRIDGING_HEADER = "LocoThings-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		46D7F03B1DA61A0B008309A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E4A9A323DC25E58B6469CB2 /* Pods-LocoThings.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LocoThings",
+				);
+				INFOPLIST_FILE = LocoThings/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TungLy.LocoThings;
+				PRODUCT_NAME = LocoThings;
+				SWIFT_OBJC_BRIDGING_HEADER = "LocoThings-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		46D7F03D1DA61A0B008309A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99CC2DD34F8C5B1AB7112D08 /* Pods-LocoThingsTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LocoThingsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TungLy.LocoThingsTests;
+				PRODUCT_NAME = LocoThings;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LocoThings.app/LocoThings";
+			};
+			name = Debug;
+		};
+		46D7F03E1DA61A0B008309A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89541602C6C986528F30859D /* Pods-LocoThingsTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LocoThingsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TungLy.LocoThingsTests;
+				PRODUCT_NAME = LocoThings;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LocoThings.app/LocoThings";
+			};
+			name = Release;
+		};
+		46D7F0401DA61A0B008309A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22EDE02844BE6ECA0E546360 /* Pods-LocoThingsUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = LocoThingsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TungLy.LocoThingsUITests;
+				PRODUCT_NAME = LocoThings;
+				TEST_TARGET_NAME = LocoThings;
+			};
+			name = Debug;
+		};
+		46D7F0411DA61A0B008309A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFB7AE6EF2D75E0938AFACFD /* Pods-LocoThingsUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = LocoThingsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TungLy.LocoThingsUITests;
+				PRODUCT_NAME = LocoThings;
+				TEST_TARGET_NAME = LocoThings;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46D7F0091DA61A0B008309A4 /* Build configuration list for PBXProject "LocoThings" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46D7F0371DA61A0B008309A4 /* Debug */,
+				46D7F0381DA61A0B008309A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46D7F0391DA61A0B008309A4 /* Build configuration list for PBXNativeTarget "LocoThings" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46D7F03A1DA61A0B008309A4 /* Debug */,
+				46D7F03B1DA61A0B008309A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46D7F03C1DA61A0B008309A4 /* Build configuration list for PBXNativeTarget "LocoThingsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46D7F03D1DA61A0B008309A4 /* Debug */,
+				46D7F03E1DA61A0B008309A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46D7F03F1DA61A0B008309A4 /* Build configuration list for PBXNativeTarget "LocoThingsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46D7F0401DA61A0B008309A4 /* Debug */,
+				46D7F0411DA61A0B008309A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		46D7F0181DA61A0B008309A4 /* LocoThings.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				46D7F0191DA61A0B008309A4 /* LocoThings.xcdatamodel */,
+			);
+			currentVersion = 46D7F0191DA61A0B008309A4 /* LocoThings.xcdatamodel */;
+			path = LocoThings.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 46D7F0061DA61A0B008309A4 /* Project object */;
+}
