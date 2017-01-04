@@ -14,7 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
-  - Alamofire (3.4.1)
+  - Alamofire (3.5.1)
   - AlamofireImage (2.4.1):
     - Alamofire (~> 3.3)
   - ASValueTrackingSlider (0.11.2)
@@ -73,7 +73,7 @@ PODS:
   - SimpleKeychain (0.7.0)
 
 DEPENDENCIES:
-  - Alamofire
+  - Alamofire (~> 3.5)
   - AlamofireImage
   - ASValueTrackingSlider
   - Auth0 (~> 1.0.0-beta.5)
@@ -87,7 +87,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
+  Alamofire: 0dfba1184a543e2aa160f4e39cac4e8aba48d223
   AlamofireImage: 3ccf3347d9ea24580dc11fb892770a0be6a29826
   ASValueTrackingSlider: 45c9f78252da60de01d8f2afe869aaf90dd978d9
   Auth0: a80a4b800beb1a105b893b3da584f0226dc00be4
@@ -105,6 +105,6 @@ SPEC CHECKSUMS:
   SideMenu: e4ecb0f1061e19230e53079edb2b300081446f80
   SimpleKeychain: b50cef3b87939d480ea1143425c00f5b4b70fe21
 
-PODFILE CHECKSUM: eeef9b0e0d8322972c7cd29f48f3057e772a6183
+PODFILE CHECKSUM: cd58078cb2d2d1d5368df2067c7ab22ae13fe35c
 
 COCOAPODS: 1.0.1

@@ -30,8 +30,6 @@
 		46D7F01A1DA61A0B008309A4 /* LocoThings.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 46D7F0181DA61A0B008309A4 /* LocoThings.xcdatamodeld */; };
 		46D7F01C1DA61A0B008309A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46D7F01B1DA61A0B008309A4 /* Assets.xcassets */; };
 		46D7F01F1DA61A0B008309A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46D7F01D1DA61A0B008309A4 /* LaunchScreen.storyboard */; };
-		46D7F02A1DA61A0B008309A4 /* LocoThingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D7F0291DA61A0B008309A4 /* LocoThingsTests.swift */; };
-		46D7F0351DA61A0B008309A4 /* LocoThingsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D7F0341DA61A0B008309A4 /* LocoThingsUITests.swift */; };
 		46DF3DAC1DDB06E700CF06CC /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46DF3DAB1DDB06E700CF06CC /* GoogleMobileAds.framework */; };
 		46DF3DAE1DDB06F900CF06CC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46DF3DAD1DDB06F900CF06CC /* GoogleService-Info.plist */; };
 		46E03CAF1DDBE8F2004B0065 /* EventfulAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E03CAE1DDBE8F2004B0065 /* EventfulAPIClient.swift */; };
@@ -84,11 +82,7 @@
 		46D7F01E1DA61A0B008309A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46D7F0201DA61A0B008309A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46D7F0251DA61A0B008309A4 /* LocoThings.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocoThings.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		46D7F0291DA61A0B008309A4 /* LocoThingsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocoThingsTests.swift; sourceTree = "<group>"; };
-		46D7F02B1DA61A0B008309A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46D7F0301DA61A0B008309A4 /* LocoThings.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocoThings.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		46D7F0341DA61A0B008309A4 /* LocoThingsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocoThingsUITests.swift; sourceTree = "<group>"; };
-		46D7F0361DA61A0B008309A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46DF3DAB1DDB06E700CF06CC /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 		46DF3DAD1DDB06F900CF06CC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		46E03CAE1DDBE8F2004B0065 /* EventfulAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventfulAPIClient.swift; sourceTree = "<group>"; };
@@ -189,8 +183,6 @@
 			isa = PBXGroup;
 			children = (
 				46D7F0101DA61A0B008309A4 /* LocoThings */,
-				46D7F0281DA61A0B008309A4 /* LocoThingsTests */,
-				46D7F0331DA61A0B008309A4 /* LocoThingsUITests */,
 				46D7F00F1DA61A0B008309A4 /* Products */,
 				07797BD01A75D95A3EA36B6F /* Pods */,
 				E1FAD4DD3ED1678AE8C70C89 /* Frameworks */,
@@ -218,24 +210,6 @@
 				46D7F01B1DA61A0B008309A4 /* Assets.xcassets */,
 			);
 			path = LocoThings;
-			sourceTree = "<group>";
-		};
-		46D7F0281DA61A0B008309A4 /* LocoThingsTests */ = {
-			isa = PBXGroup;
-			children = (
-				46D7F0291DA61A0B008309A4 /* LocoThingsTests.swift */,
-				46D7F02B1DA61A0B008309A4 /* Info.plist */,
-			);
-			path = LocoThingsTests;
-			sourceTree = "<group>";
-		};
-		46D7F0331DA61A0B008309A4 /* LocoThingsUITests */ = {
-			isa = PBXGroup;
-			children = (
-				46D7F0341DA61A0B008309A4 /* LocoThingsUITests.swift */,
-				46D7F0361DA61A0B008309A4 /* Info.plist */,
-			);
-			path = LocoThingsUITests;
 			sourceTree = "<group>";
 		};
 		46E2D9C71DA7A229008B0134 /* Controllers */ = {
@@ -551,7 +525,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46D7F02A1DA61A0B008309A4 /* LocoThingsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -559,7 +532,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46D7F0351DA61A0B008309A4 /* LocoThingsUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -695,6 +667,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/LocoThings",
 				);
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
 				INFOPLIST_FILE = LocoThings/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -702,6 +675,7 @@
 				PRODUCT_NAME = LocoThings;
 				SWIFT_OBJC_BRIDGING_HEADER = "LocoThings-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -717,12 +691,14 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/LocoThings",
 				);
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
 				INFOPLIST_FILE = LocoThings/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.TungLy.LocoThings;
 				PRODUCT_NAME = LocoThings;
 				SWIFT_OBJC_BRIDGING_HEADER = "LocoThings-Bridging-Header.h";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};

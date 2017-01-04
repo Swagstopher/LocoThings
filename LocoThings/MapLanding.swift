@@ -109,7 +109,10 @@ class MapLanding: BaseVC, CLLocationManagerDelegate, MKMapViewDelegate {
                 NSUserDefaults.standardUserDefaults().setDouble(longtitude, forKey: "longtitude")
                 NSUserDefaults.standardUserDefaults().synchronize()
                 
+                //self.coordinates = Coordinates(latitude: 37.3422, longitude: -121.8833) // Hardcode
+
                 self.coordinates = Coordinates(latitude: self.latitude, longitude: self.longtitude)
+                
                 loadEvents()
                 let center = CLLocationCoordinate2D(latitude: userLocation.coordinate.latitude, longitude: userLocation.coordinate.longitude)
                 let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5))

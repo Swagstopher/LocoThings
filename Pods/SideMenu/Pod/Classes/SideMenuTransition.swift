@@ -79,7 +79,7 @@ internal class SideMenuTransition: UIPercentDrivenInteractiveTransition, UIViewC
             }
             
             if let menuViewController = SideMenuTransition.presentDirection == .Left ? SideMenuManager.menuLeftNavigationController : SideMenuManager.menuRightNavigationController,
-                visibleViewController = visibleViewController {
+                let visibleViewController = visibleViewController {
                 singleton.interactive = true
                 visibleViewController.presentViewController(menuViewController, animated: true, completion: nil)
             }
@@ -289,7 +289,7 @@ internal class SideMenuTransition: UIPercentDrivenInteractiveTransition, UIViewC
     internal func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
         
         // get reference to our fromView, toView and the container view that we should perform the transition in
-        let container = transitionContext.containerView()!
+        let container = transitionContext.containerView()
         if let menuBackgroundColor = SideMenuManager.menuAnimationBackgroundColor {
             container.backgroundColor = menuBackgroundColor
         }

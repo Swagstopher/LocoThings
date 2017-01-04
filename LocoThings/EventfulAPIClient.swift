@@ -24,6 +24,8 @@ class EventfulAPIClient {
                      radius: Float,
                      completionHandler: ([Event] -> Void)) {
         
+        //let hardCodeCoordinates = Coordinates(latitude: 37.3422, longitude: -121.8833)
+        
         var events = [Event]()
         Alamofire.request(.GET, searchURL, parameters: [
             "app_key": appKey,

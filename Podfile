@@ -7,7 +7,7 @@ target 'LocoThings' do
   pod 'Lock', '~> 1.24'
   pod 'Auth0', '~> 1.0.0-beta.5'
   pod 'SimpleKeychain', '~> 0.7'
-  pod 'Alamofire'
+  pod 'Alamofire', '~> 3.5'
   pod 'AlamofireImage'
   pod 'SideMenu'
   pod 'Fuzi'
@@ -29,4 +29,12 @@ target 'LocoThings' do
     # Pods for testing
   end
 
+end
+
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['SWIFT_VERSION'] = '2.3'
+        end
+    end
 end
